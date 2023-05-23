@@ -24,7 +24,7 @@ struct Question {
         ),
         Question(
             title: "Что вам нравится больше ?",
-            responseType: .single,
+            responseType: .multiple,
             answers: [
                 Answer(title: "Плавать", animal: .dog),
                 Answer(title: "Спать", animal: .cat),
@@ -34,7 +34,7 @@ struct Question {
         ),
         Question(
             title: "Любите ли вы кататься на машине?",
-            responseType: .single,
+            responseType: .ranged,
             answers: [
                 Answer(title: "Ненавижу", animal: .cat),
                 Answer(title: "Нервничаю", animal: .rabbit),
@@ -76,5 +76,3 @@ enum Animal: Character {
         }
     }
 }
-
-let animal = Animal.cat
